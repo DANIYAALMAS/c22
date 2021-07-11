@@ -17,7 +17,7 @@ function setup() {
   ball=Bodies.circle(200,50,10,ball_options)
   World.add(world,ball)
 
-  ball2=Bodies.circle(350,10,12,ball_options)
+  ball2=Bodies.circle(200,150,12,ball_options)
   World.add(world,ball2)
 
    con=Matter.Constraint.create({
@@ -55,7 +55,7 @@ function draw()
   stroke(255)
   strokeWeight(2)
   line(con.pointA.x,con.pointA.y,ball.position.x,ball.position.y)
-  line(ball.position.x,ball.positioin.y,ball2.position.x,ball2.position.y)
+  line(ball.position.x,ball.position.y,ball2.position.x,ball2.position.y)
   pop()
 }
 
